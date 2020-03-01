@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+             >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="站站查询历史记录"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:id="@+id/textView2"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview" android:layout_marginTop="20dp" android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

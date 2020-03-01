@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.cslg.bus_ZB1018144"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="21"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"  android:name="org.litepal.LitePalApplication">
+        <activity android:name="MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".CityActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".StationActivity"/>
+        <activity android:name=".TrainNumActivity"/>
+        <activity android:name=".TicketActivity"/>
+        <activity android:name=".HistoryActivity"/>
+        <service android:name=".MusicService">
+        <intent-filter>
+            <action android:name="com.example.musicplayer.Android.MUSIC"/>
+            <category android:name="android.intent.category.defaut"/>
+        </intent-filter>
+        </service>
+    </application>
+</manifest>

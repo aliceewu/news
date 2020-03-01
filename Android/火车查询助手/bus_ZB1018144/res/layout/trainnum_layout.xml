@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#E6E6E6"
+              android:orientation="vertical"
+              android:padding="10dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车次查询"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="车次编号："
+                android:textColor="#000"
+                android:textSize="20sp" />
+        <EditText
+                android:id="@+id/trainnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="车次编号，如G22"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="出发日期："
+                android:textColor="#000"
+                android:textSize="20sp" />
+        <TextView
+                android:id="@+id/numdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:onClick="showDateDialog"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:textColor="#000"
+                android:padding="10dp" />
+    </LinearLayout>
+    <Button
+            android:id="@+id/numsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#3C8DC4"
+            android:text="查询车票"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/sequenceno" android:layout_weight="1"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/station" android:layout_weight="1"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/arrivaltime" android:layout_weight="1"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/departuretime" android:layout_weight="1"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/stoptime" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="5px"
+              android:id="@+id/hr"
+    />
+    <ListView
+            android:id="@+id/triannumlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
+
+

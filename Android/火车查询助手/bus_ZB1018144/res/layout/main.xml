@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+             android:background="#fff"
+              android:id="@+id/backimg"
+              android:weightSum="1">
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#4CC1D3">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="火车查询小助手"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical|center_horizontal"/>
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:background="@drawable/main"
+            android:layout_gravity="center_horizontal"/>
+    <GridView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:columnWidth="30dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="3"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="22dp"
+            android:gravity="center"
+            android:layout_weight="1"
+           />
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#4CC1D3">
+    <TextView
+            android:orientation="horizontal"
+            android:text="ZB1018144版权所有"
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:layout_centerVertical="true"
+            android:gravity="fill_vertical|center_horizontal"/>
+    </RelativeLayout>
+</LinearLayout>
+

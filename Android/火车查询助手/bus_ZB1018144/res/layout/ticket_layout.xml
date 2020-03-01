@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#E6E6E6"
+              android:orientation="vertical"
+              android:padding="10dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余票查询"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="出发地："
+                android:textColor="#000"
+                android:textSize="20sp" />
+        <TextView
+                android:id="@+id/ticketstart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="到达地："
+                android:textColor="#000"
+                android:textSize="20sp" />
+        <TextView
+                android:id="@+id/ticketend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:textColor="#000"
+                android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="出发日期："
+                android:textColor="#000"
+                android:textSize="20sp" />
+        <TextView
+                android:id="@+id/ticketdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:onClick="showDateDialog"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:textColor="#000"
+                android:padding="10dp" />
+    </LinearLayout>
+    <Button
+            android:id="@+id/ticketsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#3C8DC4"
+            android:text="查询车票"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    <ListView
+            android:id="@+id/ticketlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
+
+
