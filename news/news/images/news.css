@@ -1,0 +1,130 @@
+body
+{
+	font: 12px "宋体";
+	text-align: center;
+	padding:0px;
+    margin:0px;
+	background-color: #FFF;
+}
+
+#container{
+
+	width:800px;
+	margin: 0px auto;
+  
+}
+
+#header
+{
+	width:800px;
+	margin: 0px auto;
+}
+
+#menu{
+
+	width:800px;
+	height: 74px;
+	margin: 0px auto;
+	background: url('../images/logo.gif') no-repeat;
+}
+
+#menu ul{
+
+	list-style: none;
+	margin: 30px,10px,0px,0px;
+	float: right; 
+}
+
+#menu ul li a:hover{
+	background: #666;
+	color: #fff;
+
+}
+
+#menu ul li {
+    
+    margin: 0 10px;
+	float: left;
+	line-height: 35px;
+}
+
+#menu ul li a:link,#menu ul li a:visited{
+
+	font-weight: bold;
+	color: #666;
+	text-decoration: none;
+	background-color: #efefef;
+}
+
+
+.menudiv{
+	width: 2px;
+	height: 35px;
+	background: #999;
+}
+
+
+#banner{
+    border-bottom: 5px solid #EFEF00;
+	width:778px;
+	height: 195px;
+	margin: 0px auto;
+	background: url('../images/banner.png') no-repeat;
+}
+
+#pagebody{
+   
+	width: 778px;
+	height: 500px;
+	margin: 0px auto;
+}
+
+#sidebar{
+	
+    border-right: 5px solid #EFEF00;
+	overflow: hidden;
+	width:163px;
+	height: 500px;
+	float: left;
+	background-color: #BDBDBD;
+
+}
+
+
+#login{
+	margin: 10px,0px,0px,0px;
+}
+
+#mainbody{
+
+    overflow: hidden;
+	text-align: left;
+	width:610px;
+	height: 500px;
+	float: right;
+	background-color: #D8D8D8;
+}
+
+#mainfunction{
+	margin: 10px,0px,0px,10px;
+}
+
+#footer
+{
+	width: 778px;
+	height: 50px;
+	margin: 0px auto;
+	background-color: #FFCC00;
+	padding: 20px 0px 0px 0px;
+	font-weight: bolder;
+}
+
+a:link,a: visited{
+  
+  text-decoration: none;
+}
+
+a:hover{
+	background: #666;
+	color: #fff;
+}

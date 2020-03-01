@@ -1,0 +1,187 @@
+body
+{
+	font: 12px "宋体";
+	text-align: center;
+	padding:0px;
+    margin:0px;
+	background-color: #f0f0f0;
+}
+
+#container{
+
+	width:800px;
+	margin: 0px auto;
+
+}
+
+#header
+{
+	width:800px;
+	margin: 0px auto;
+}
+
+#menu{
+	width:778px;
+	height: 35px;
+	margin: 0px auto;
+}
+
+#menu ul{
+	margin: 0;
+	list-style: none;
+	float: left;
+}
+
+#menu ul li a:hover{
+	background: #666;
+	color: #fff;
+
+}
+
+#menu ul li {
+    margin: 0 10px;
+	float: left;
+	line-height: 35px;
+}
+
+#menu ul li a:link,#menu ul li a:visited{
+
+	font-weight: bold;
+	color: #666;
+	text-decoration: none;
+	background-color: #efefef;
+}
+
+
+.menudiv{
+	width: 1px;
+	height: 35px;
+	background: #ccc;
+}
+
+
+#banner{
+	width:778px;
+	height: 195px;
+	margin: 0px auto;
+	background: url('../images/2.jpg') no-repeat;
+	background-size: cover;
+}
+
+#pagebody{
+
+	width: 778px;
+	height: 600px;
+	margin: 0px auto;
+}
+
+#sidebar{
+	overflow: hidden;
+	width:166px;
+	height: 600px;
+	float: right;
+	background-color: #FFF;
+	border-right: 2px solid #f0f0f0;
+}
+
+
+#login{
+	margin: 10px,0px,0px,0px;
+
+
+}
+
+#mainbody{
+	box-sizing: border-box;
+    overflow: hidden;
+	text-align: left;
+	width:610px;
+	padding: 10px;
+	height: 600px;
+	float: left;
+	background-color: #FFF;
+}
+
+#mainfunction{
+	margin: 10px,0px,0px,10px;
+}
+
+{
+	width: 778px;
+	height: 50px;
+	margin: 0px auto;
+	background-color: #FFCC00;
+	padding: 20px 0px 0px 0px;
+	font-weight: bolder;
+}
+
+a:link,a: visited{
+
+  text-decoration: none;
+}
+
+a:hover{
+	background: #666;
+	color: #fff;
+}
+
+#mainfunction img{
+	max-width: 480px;
+	width: expression(this.width > 480 ? "480px" : this.width);
+
+}
+
+#footer
+{
+	width: 778px;
+	height: 30px;
+	margin: 0px auto;
+	background-color: #272a30;
+	padding: 10px 0 15px 0;
+	font-weight: bolder;
+	color: #ccc;
+}
+
+#footer a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+
+table {
+	color: #333;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+}
+th,td {
+	padding: 6px;
+	border: 1px solid #ddd;
+}
+input[name="keyword"] {
+	width: 180px;
+	height: 30px;
+	border: 1px solid #F22222;
+}
+.search-btn {
+	width: 40px;
+	height: 30px;
+	border: none;
+	background: #F22222;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.header {
+	position: relative;
+}
+.title {
+	position: absolute;
+	font-size: 38px;
+	color: #fff;
+	font-weight: bold;
+	top: 140px;
+	left: 50%;
+	margin-left: -110px;
+	z-index: 999;
+}
